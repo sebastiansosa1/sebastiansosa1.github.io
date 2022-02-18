@@ -3,12 +3,14 @@
 * custom styles
 **/
 
+
+
 :root {
-	--xeeds-theme-color: rgb(210, 242, 212);
-	--xeeds-theme-color2: rgb(190, 222, 192);
+	--xeeds-green: #73b95a;
+	--xeeds-darkgreen: #418728;
+	--xeeds-grey: #706f6f;
 	--xeeds-text-color: black;
-	--xeeds-text-color2: #706f6f;
-	--xeeds-text-color3: rgb(145, 145, 145);
+	--xeeds-text-color3: #706f6f;
   }
 
 
@@ -19,12 +21,13 @@ html, body {
 body {
 	height:100%;	
 	font-family: 'Open Sans', sans-serif;
+	/* font-family: 'Lato', sans-serif; */
 	font-weight: 300;
 	padding:0;
 	margin:0;
 	font-size:16px;
 	line-height: 28px;
-	color: #777; 
+	color: var(--xeeds-grey); 
 	background: #fff;
 	overflow-x:hidden;
 	position: relative;
@@ -47,7 +50,7 @@ p {
 	margin:0;
 }
 a {
-	color: var(--xeeds-theme-color);
+	color: var(--xeeds-green);
 	outline: 0;
 	font-weight: bold;
 	-webkit-transition: all .8s ease;
@@ -60,7 +63,7 @@ a:hover {
 	transition: all .8s ease;
 }
 .highlight {
-	color: var(--xeeds-theme-color);
+	color: var(--xeeds-green);
 }
  
 .fullscreen {
@@ -81,14 +84,14 @@ a:hover {
 	z-index: 999;
 }
 .navbar-default {
-	background: var(--xeeds-theme-color);
-	padding: 15px 0;
+	background: var(--xeeds-green);
+	padding: 25px;
 }
 .navbar-default .navbar-brand {
     padding: 0px;
 }
 .navbar-default .navbar-nav > li > a {
-    color: var(--xeeds-text-color2);
+    color: var(--xeeds-grey);
 	/* rgba(255, 255, 255, 0.61); */
 	
     font-weight: 600;
@@ -112,14 +115,14 @@ a:hover {
 	line-height: 20px;
 	padding: 15px 35px;
 	height: 50px;
-	border: 2px solid var(--xeeds-theme-color2);
+	border: 2px solid var(--xeeds-green);
 	background: transparent;
 	transition: all 0.4s;
-	color: var(--xeeds-theme-color2);
+	color: var(--xeeds-green);
 }
 .btn-default:hover, .btn-default:focus, .btn-default:active, .btn-default.active, .open > .dropdown-toggle.btn-default {
-	border: 2px solid var(--xeeds-theme-color2);
-	background: var(--xeeds-theme-color2);
+	border: 2px solid var(--xeeds-green);
+	background: var(--xeeds-green);
 	color: var(--xeeds-text-color);
 }
 .btn-primary {
@@ -129,15 +132,15 @@ a:hover {
 	line-height: 20px;
 	padding: 15px 35px;
 	height: 50px;
-	border: 2px solid var(--xeeds-theme-color);
-	background: var(--xeeds-theme-color);
+	border: 2px solid var(--xeeds-green);
+	background: var(--xeeds-green);
 	transition: all 0.4s;
 	color: var(--xeeds-text-color);
 }
 .btn-primary:hover, .btn-primary:focus, .btn-primary:active, .btn-primary.active, .open > .dropdown-toggle.btn-primary {
-	border: 2px solid var(--xeeds-theme-color);
+	border: 2px solid var(--xeeds-green);
 	background: transparent;
-	color: var(--xeeds-theme-color);
+	color: var(--xeeds-green);
 }
 .btn-secondary {
 	font-size: 20px;
@@ -146,13 +149,13 @@ a:hover {
 	padding: 20px 50px;
 	height: 65px;
 	border: none;
-	background: #3eb0f7;
+	background: var(--xeeds-darkgreen);
 	transition: all 0.4s;
 	color: var(--xeeds-text-color);
 	border-radius: 4px;
 }
 .btn-secondary:hover, .btn-secondary:focus, .btn-secondary:active, .btn-secondary.active, .open > .dropdown-toggle.btn-secondary {
-	background: #1f96e0;
+	background: var(--xeeds-darkgreen);
 	color: var(--xeeds-text-color)
 }
 .site-name img{
@@ -205,7 +208,7 @@ a:hover {
 	margin-right: 10px;
 }
 .option:hover {
-	color: #3eb0f7;
+	color: var(--xeeds-darkgreen);
 }
 .header-phone {
 	margin: 50px 0 100px;
@@ -245,7 +248,7 @@ a:hover {
 	font-size: 48px;
 	float: left;
 	width: 20%;
-	color: var(--xeeds-theme-color);
+	color: var(--xeeds-green);
 	height: 100%;
 	position: relative;
 	opacity: 0.6;
@@ -254,7 +257,7 @@ a:hover {
 	top: 10px;
 }
 .feat-list:hover i {
-	color: #3eb0f7;
+	color: var(--xeeds-darkgreen);
 	-webkit-transition: all .8s ease;
 	transition: all .8s ease;
 }
@@ -283,9 +286,9 @@ a:hover {
 	height: 100px;
 	line-height: 100px;
 	font-size: 50px;
-	color: var(--xeeds-theme-color);
+	color: var(--xeeds-green);
 	border-radius: 5px;
-	border: solid 1px var(--xeeds-theme-color);
+	border: solid 1px var(--xeeds-green);
 	border-radius: 50%;
 }
 .subscribe p {
@@ -315,7 +318,7 @@ a:hover {
 }
 .subscribe-form button {
 	border-radius: 0 4px 4px 0;
-	background-color: var(--xeeds-theme-color);
+	background-color: var(--xeeds-green);
 	color: #ffffff;
 	font-size: 1em;
 	line-height: 52px;
@@ -332,7 +335,7 @@ a:hover {
 	height: 55px;
 }
 .subscribe-form .btn:hover {
-	background-color: #1f96e0;
+	background-color: var(--xeeds-darkgreen);
 	color: #fff;
 	-webkit-transition: all .8s ease;
 	transition: all .8s ease;
@@ -356,7 +359,7 @@ a:hover {
     width: 100px;
     height: 3px;
     margin: 0 auto;
-    background: var(--xeeds-theme-color);
+    background: var(--xeeds-green);
 }
 .portfolio {
     padding-top: 50px;
@@ -376,7 +379,7 @@ a:hover {
 	transition: all .8s ease;
 }
 .portfolio .screen img:hover {
-	border: solid 5px var(--xeeds-theme-color);
+	border: solid 5px var(--xeeds-green);
 	-webkit-transition: all .8s ease;
 	transition: all .8s ease;
 }
@@ -487,10 +490,10 @@ a:hover {
 }
 .clients-item .client-info .company {
 	font-style: italic;
-	color: var(--xeeds-theme-color);
+	color: var(--xeeds-green);
 }
 .owl-theme .owl-controls .owl-page span{
-	background: var(--xeeds-theme-color);
+	background: var(--xeeds-green);
 }
 .action {
 	color: #fff;
@@ -514,13 +517,13 @@ a:hover {
 	border-radius: 4px;
 } 
 .iphone {
-	background: #3eb0f7;
+	background: var(--xeeds-darkgreen);
 	transition: all 0.3s ease;
 	-webkit-transition: all 0.3s ease;
 	-moz-transition: all 0.3s ease;
 }
 .iphone:hover {
-	background-color: #1f96e0;
+	background-color: var(--xeeds-darkgreen);
 	transition: all 0.3s ease;
 	-webkit-transition: all 0.3s ease;
 	-moz-transition: all 0.3s ease;
@@ -560,7 +563,7 @@ a:hover {
 	font-size: 40px;
 }
 #footer {
-	background: var(--xeeds-theme-color);
+	background: var(--xeeds-green);
 	padding: 50px 0 50px;
 }
 .social ul {
@@ -576,17 +579,17 @@ a:hover {
 	width: 40px;
 	height: 40px;
 	line-height: 40px;
-	color: var(--xeeds-theme-color);
+	color: var(--xeeds-green);
 	border-radius: 5px;
 	background: #fff;
-	border: solid 1px var(--xeeds-theme-color);
+	border: solid 1px var(--xeeds-green);
 	-webkit-transition: all .8s ease;
 	transition: all .8s ease;
 	border-radius: 50%;
 }
 .social li a:hover {
 	color: #fff;
-	background: #3eb0f7;
+	background: var(--xeeds-darkgreen);
 }
 .scrollToTop{
 	width: 40px; 
@@ -601,7 +604,7 @@ a:hover {
 	display: none;
 }
 .scrollToTop:hover{
-	color: var(--xeeds-theme-color);
+	color: var(--xeeds-green);
 }
 .control-group .controls {
 	overflow-x: hidden;
@@ -616,7 +619,7 @@ padding:100px 0;
     width: 100px;
     height: 3px;
     margin: 0 auto;
-    background: var(--xeeds-theme-color);
+    background: var(--xeeds-green);
 }
 .price-box {
 	border: solid 1px #DEDEDE;
@@ -647,7 +650,7 @@ padding:100px 0;
 	bottom: 0px;
 }
 .price-group .price {
-	color: var(--xeeds-theme-color);
+	color: var(--xeeds-green);
 	font-size: 46px;
 	font-weight: 500;
 }
@@ -666,13 +669,13 @@ padding:100px 0;
 	font-size: 17px;
 	padding: 7px 35px;
 	height: 40px;
-	background: var(--xeeds-theme-color);
+	background: var(--xeeds-green);
 	transition: all 0.4s;
 	color: var(--xeeds-text-color);
 	border-radius: 0;	
 }
 .btn-price:hover {
-	background: #1f96e0;
+	background: var(--xeeds-darkgreen);
 	color: var(--xeeds-text-color);
 }
 #contact {
@@ -698,7 +701,7 @@ padding:100px 0;
 	margin-left: 15px;
 	position: absolute; 
 	left: 0;
-	color: var(--xeeds-theme-color); 
+	color: var(--xeeds-green); 
 	font-size: 25px;
 	line-height: 30px;
 }
@@ -729,7 +732,7 @@ padding:100px 0;
 }
 #contact-form .btn {
 	height: 55px;
-	background-color: var(--xeeds-theme-color);
+	background-color: var(--xeeds-green);
 	color: #ffffff;
 	font-size: 17px !important;
 	line-height: 18px;
@@ -743,7 +746,7 @@ padding:100px 0;
 	width: auto;
 }
 #contact-form .btn:hover {
-	background-color: #1f96e0;
+	background-color: var(--xeeds-darkgreen);
 	-webkit-transition: all .8s ease;
 	transition: all .8s ease;
 }
