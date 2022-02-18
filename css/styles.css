@@ -6,7 +6,7 @@
 :root {
 	--xeeds-theme-color: rgb(210, 242, 212);
 	--xeeds-theme-color2: rgb(190, 222, 192);
-	--xeeds-text-color: rgb(5, 8, 56);
+	--xeeds-text-color: black;
 	--xeeds-text-color2: #706f6f;
 	--xeeds-text-color3: rgb(145, 145, 145);
   }
@@ -560,7 +560,7 @@ a:hover {
 	font-size: 40px;
 }
 #footer {
-	background: #fff;
+	background: var(--xeeds-theme-color);
 	padding: 50px 0 50px;
 }
 .social ul {
