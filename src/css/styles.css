@@ -227,6 +227,9 @@ a:hover {
 .btn-section {
 	padding-top: 20px;
 }
+#blank-space {
+	padding: 50px 0;
+}
 #services {
 	padding: 80px 0;
 }
